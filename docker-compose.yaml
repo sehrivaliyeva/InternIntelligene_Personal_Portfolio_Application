@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  db:
+    hostname: postgres
+    image: postgres:13
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: portfolio
+    ports:
+      - "5432:5432"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8580:8080"
+
+
+
+volumes:
+  db_data:
