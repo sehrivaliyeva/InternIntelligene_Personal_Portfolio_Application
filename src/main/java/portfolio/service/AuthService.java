@@ -20,6 +20,8 @@ public class AuthService {
     public String register(UserDto userDTO) {
         if (userRepository.existsByUsername(userDTO.getUsername())) {
             throw new RuntimeException("Username already exists");
+
+
         }
 
         User user = new User();
@@ -28,6 +30,7 @@ public class AuthService {
         user.setUsername(userDTO.getUsername());
         user.setEmail(userDTO.getEmail());
         user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
+        user.setRole("ROLE_USER");
         userRepository.save(user);
         return "User registered successfully!";
     }

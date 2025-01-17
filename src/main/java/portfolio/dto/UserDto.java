@@ -30,9 +30,6 @@ public class UserDto {
     @Email(message = "Email should be valid")
     private String email;
 
-    public @NotNull(message = "First name must not be null") String getFirstName() {
-        return firstName;
-    }
 
 
 }
