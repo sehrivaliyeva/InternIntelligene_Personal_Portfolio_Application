@@ -13,9 +13,6 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface PortfolioMapper {
 
-
-    List<PortfolioResponse> toPortfolioResponseList(List<Portfolio> portfolioEntities);
-
     @Mapping(target = "user.id", source = "userId")
     Portfolio toPortfolio(PortfolioRequest portfolioRequest);
 

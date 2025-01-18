@@ -1,7 +1,5 @@
 package portfolio.mapper;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
 import portfolio.dto.PortfolioRequest;
@@ -12,25 +10,11 @@ import portfolio.entity.User;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-01-17T21:13:33+0400",
+    date = "2025-01-18T15:47:19+0400",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)"
 )
 @Component
 public class PortfolioMapperImpl implements PortfolioMapper {
-
-    @Override
-    public List<PortfolioResponse> toPortfolioResponseList(List<Portfolio> portfolioEntities) {
-        if ( portfolioEntities == null ) {
-            return null;
-        }
-
-        List<PortfolioResponse> list = new ArrayList<PortfolioResponse>( portfolioEntities.size() );
-        for ( Portfolio portfolio : portfolioEntities ) {
-            list.add( toPortfolioResponse( portfolio ) );
-        }
-
-        return list;
-    }
 
     @Override
     public Portfolio toPortfolio(PortfolioRequest portfolioRequest) {

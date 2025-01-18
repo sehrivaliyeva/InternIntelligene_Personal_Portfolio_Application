@@ -3,6 +3,8 @@ package portfolio.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -10,12 +12,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import portfolio.service.JwtFilter;
-
-import java.util.List;
+import portfolio.service.MyUserDetailsService;
 
 @Configuration
 @EnableWebSecurity
@@ -23,6 +21,8 @@ public class SecurityConfig {
 
     @Autowired
     JwtFilter jwtFilter;
+    @Autowired
+    MyUserDetailsService myUserDetailsService;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -33,21 +33,34 @@ public class SecurityConfig {
                         .permitAll()
                         .requestMatchers("/v1/auth/user-register", "/v1/auth/user-login")
                         .permitAll()
-                        .requestMatchers("/v1/portfolio/**")  // Yalnız 'USER' rolu olan istifadəçilərə icazə
-                        .hasAnyRole("USER")
+                        .requestMatchers("/v1/portfolio/**")
+                        .hasAuthority("ROLE_USER")
                         .anyRequest()
                         .authenticated()
                 )
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))  // Sessiyasız rejim
-                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)  // JWT filtrini əlavə edir
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
+
     }
 
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+    @Bean
+    public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
+        AuthenticationManagerBuilder authenticationManagerBuilder =
+                http.getSharedObject(AuthenticationManagerBuilder.class);
+
+        authenticationManagerBuilder
+                .userDetailsService(myUserDetailsService)
+                .passwordEncoder(passwordEncoder());
+
+        return authenticationManagerBuilder.build();
+    }
+
 
 }

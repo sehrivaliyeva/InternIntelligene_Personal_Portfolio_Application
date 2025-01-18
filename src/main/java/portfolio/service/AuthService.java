@@ -45,10 +45,8 @@ public class AuthService {
             throw new RuntimeException("Invalid username or password");
         }
 
-        // Load UserDetails from MyUserDetailsService
         UserDetails userDetails = myUserDetailsService.loadUserByUsername(user.getUsername());
 
-        // Generate JWT Token using userDetails.getUsername()
         return jwtService.generateToken(userDetails.getUsername());
     }
 }

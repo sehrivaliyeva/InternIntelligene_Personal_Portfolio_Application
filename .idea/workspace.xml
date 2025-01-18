@@ -5,32 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61e01d55-adb9-4e33-832b-acdd8b36276b" name="Changes" comment="create portfolio crud operations and soma jwt configuration">
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/controller/PortfolioController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/dto/PortfolioRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/dto/PortfolioResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/dto/PortfolioUpdateRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/entity/Portfolio.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/exception/NotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/exception/ResourceNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/repository/PortfolioRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/portfolio/service/PortfolioService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/portfolio/mapper/PortfolioMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-portfolio.PortfolioAppApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/portfolio.PortfolioAppApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/portfolio/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/portfolio/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/PortfolioAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/PortfolioAppApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/controller/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/controller/PortfolioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/entity/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/entity/Portfolio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/entity/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/entity/UserPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/mapper/PortfolioMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/mapper/PortfolioMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/service/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/service/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/service/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/PortfolioAppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/PortfolioAppApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/portfolio/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/controller/PortfolioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/controller/PortfolioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/entity/Portfolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/entity/Portfolio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapperImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/portfolio/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/service/AuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/service/MyUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/service/MyUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/service/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/service/JwtFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/portfolio/mapper/PortfolioMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/portfolio/mapper/PortfolioMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-portfolio.PortfolioAppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-portfolio.PortfolioAppApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/portfolio.PortfolioAppApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/portfolio.PortfolioAppApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +135,10 @@
       <workItem from="1736318615867" duration="17521000" />
       <workItem from="1737020722888" duration="968000" />
       <workItem from="1737113700139" duration="30525000" />
-      <workItem from="1737182011889" duration="8070000" />
+      <workItem from="1737182011889" duration="11671000" />
+      <workItem from="1737198993178" duration="714000" />
+      <workItem from="1737200137306" duration="2241000" />
+      <workItem from="1737202730761" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="some fixes">
       <option name="closed" value="true" />
@@ -165,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737182152884</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create portfolio crud operations and soma jwt configuration">
+      <option name="closed" value="true" />
+      <created>1737190877418</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737190877418</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -22,9 +22,6 @@ public class Portfolio {
     private String skills;
     private String experience;
     private String education;
-
-
-
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
