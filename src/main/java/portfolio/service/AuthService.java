@@ -1,6 +1,7 @@
 package portfolio.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import portfolio.dto.LoginDto;
@@ -15,6 +16,7 @@ public class AuthService {
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder passwordEncoder;
     private final JwtService jwtService;
+    private final MyUserDetailsService myUserDetailsService;
 
 
     public String register(UserDto userDTO) {
@@ -43,6 +45,11 @@ public class AuthService {
             throw new RuntimeException("Invalid username or password");
         }
 
-        return jwtService.generateToken(String.valueOf(user));
+        // Load UserDetails from MyUserDetailsService
+        UserDetails userDetails = myUserDetailsService.loadUserByUsername(user.getUsername());
+
+        // Generate JWT Token using userDetails.getUsername()
+        return jwtService.generateToken(userDetails.getUsername());
     }
 }
+

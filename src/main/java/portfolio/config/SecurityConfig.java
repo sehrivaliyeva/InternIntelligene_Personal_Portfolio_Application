@@ -10,9 +10,12 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import portfolio.service.JwtFilter;
+
+import java.util.List;
 
 @Configuration
 @EnableWebSecurity
@@ -24,41 +27,27 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
-                .cors(AbstractHttpConfigurer::disable)
-                .csrf(AbstractHttpConfigurer::disable)  // CSRF qorumasını deaktiv edir (JWT ilə sessiyasız autentifikasiya üçün)
+                .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html")  // Swagger UI və API sənədlərinə hər kəsin girməsinə icazə verir
+                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html")
                         .permitAll()
-                        .requestMatchers("/user-register", "/user-login")  // Qeydiyyat və login səhifələrinə hər kəsin girməsinə icazə verir
+                        .requestMatchers("/v1/auth/user-register", "/v1/auth/user-login")
                         .permitAll()
-                        .requestMatchers("/v1/portfolio/**")  // Yalnız 'USER' rolu olan istifadəçilərə portfelə daxil olmağa icazə verir
-                        .hasRole("USER")
-                        .anyRequest()  // Qalan bütün sorğular doğrulama tələb edir
+                        .requestMatchers("/v1/portfolio/**")  // Yalnız 'USER' rolu olan istifadəçilərə icazə
+                        .hasAnyRole("USER")
+                        .anyRequest()
                         .authenticated()
                 )
-                .httpBasic(AbstractHttpConfigurer::disable)  // Basic Authentication deaktiv edilir (JWT istifadə olunur)
+                .httpBasic(AbstractHttpConfigurer::disable)
                 .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))  // Sessiya yaratmaq yerinə stateless metod istifadə edilir (sessiyasız)
-                // Anonim istifadəçilərə də icazə verilir (Swagger və qeydiyyat üçün)
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))  // Sessiyasız rejim
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)  // JWT filtrini əlavə edir
                 .build();
     }
+
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                // Burada 'allowedOrigins' düzgün təyin edilir
-                registry.addMapping("/**").allowedOrigins("http://localhost:4200")
-                        .allowedMethods("GET", "POST", "PUT", "DELETE")  // Hər hansı bir HTTP metoduna icazə verir
-                        .allowedHeaders("*")  // İstənilən başlıqla sorğulara icazə verir
-                        .allowCredentials(true);  // Cookies və authorization başlıqlarını göndərməyə icazə verir
-            }
-        };
-    }
 }

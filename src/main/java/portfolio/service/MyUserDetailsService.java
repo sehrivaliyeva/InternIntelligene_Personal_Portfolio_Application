@@ -23,16 +23,13 @@ public class MyUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<User> userOptional = repo.findByUsername(username);
-        System.out.println("User : " + userOptional);
 
         if (userOptional.isEmpty()) {
-            System.out.println("User not found");
             throw new UsernameNotFoundException("Username not found");
         }
 
         User user = userOptional.get();
-
-        Collection<? extends GrantedAuthority> authorities = Collections.singleton(new SimpleGrantedAuthority("USER"));
+        Collection<? extends GrantedAuthority> authorities = Collections.singleton(new SimpleGrantedAuthority(user.getRole()));
 
         return new org.springframework.security.core.userdetails.User(
                 user.getUsername(),
