@@ -21,38 +21,13 @@ Built with **Spring Boot**, this app integrates powerful libraries for secure au
 - **Data Mapping**: MapStruct
 - **Development Tools**: Lombok, Spring Security, Spring Data JPA
 
-## Installation Guide
 
 ### Prerequisites
 - **Java 17** or above
 - **Maven** for dependency management and building the project
 - **PostgreSQL** (Make sure you have a PostgreSQL instance set up)
 
-### Steps to Setup the Project Locally
-
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/sehrivaliyeva/Portfolio-App.git
-    ```
-
-2. **Navigate to the Project Directory**:
-    ```bash
-    cd Portfolio-App
-    ```
-
-3. **Configure Database Connection**:
-    Update your `application.properties` or `application.yml` with the following database credentials:
-    ```properties
-    spring.datasource.url=jdbc:postgresql://localhost:5432/portfolio_db
-    spring.datasource.username=your_username
-    spring.datasource.password=your_password
-    ```
-
-4. **Run the Application**:
-    Start the application with:
-    ```bash
-    mvn spring-boot:run
-    ```
+    
 
     The app will be available at `http://localhost:8080`.
 
