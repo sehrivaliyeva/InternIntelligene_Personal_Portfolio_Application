@@ -10,18 +10,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SwaggerConfig {
-    /*@Bean
-    public OpenAPI openAPI() {
-        return new OpenAPI()
-                .info(new Info().title("Portfolio API").version("1.0").description("API Documentation"))
-                .addSecurityItem(new SecurityRequirement().addList("bearerAuth"))
-                .components(new io.swagger.v3.oas.models.Components()
-                        .addSecuritySchemes("bearerAuth", new SecurityScheme()
-                                .name("bearerAuth")
-                                .type(SecurityScheme.Type.HTTP)
-                                .scheme("bearer")
-                                .bearerFormat("JWT")));
-    }*/
 
     @Bean
     public OpenAPI openAPI() {
@@ -34,7 +22,7 @@ public class SwaggerConfig {
                                 .type(SecurityScheme.Type.HTTP)
                                 .scheme("bearer")
                                 .bearerFormat("JWT")));
+
+
     }
-
-
 }

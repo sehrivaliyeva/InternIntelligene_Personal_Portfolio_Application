@@ -11,11 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @OpenAPIDefinition(
         info = @Info(
                 title = "PERSONAL PORTFOLIO",
-                description = "Backend Rest APIs for Portfolio "
-
+                description = "Backend Rest APIs for Portfolio"
         )
 )
-
 public class PortfolioAppApplication {
 
     public static void main(String[] args) {

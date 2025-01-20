@@ -8,8 +8,6 @@ import portfolio.dto.PortfolioResponse;
 import portfolio.dto.PortfolioUpdateRequest;
 import portfolio.entity.Portfolio;
 
-import java.util.List;
-
 @Mapper(componentModel = "spring")
 public interface PortfolioMapper {
 

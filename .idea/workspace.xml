@@ -5,36 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61e01d55-adb9-4e33-832b-acdd8b36276b" name="Changes" comment="create portfolio crud operations and soma jwt configuration">
-      <change afterPath="$PROJECT_DIR$/src/main/java/portfolio/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/portfolio/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/portfolio/service/PortfolioServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/PortfolioAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/PortfolioAppApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/controller/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/controller/PortfolioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/dto/PortfolioRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/dto/PortfolioRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/dto/PortfolioResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/dto/PortfolioResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/entity/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/entity/Portfolio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/entity/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/entity/UserPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/mapper/PortfolioMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/mapper/PortfolioMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/portfolio/service/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/portfolio/service/JwtFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/portfolio/PortfolioAppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/portfolio/PortfolioAppApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/portfolio/PortfolioAppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/PortfolioAppApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/portfolio/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/portfolio/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/controller/AuthController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/portfolio/controller/PortfolioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/controller/PortfolioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/dto/PortfolioRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/dto/PortfolioRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/dto/PortfolioResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/dto/PortfolioResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/portfolio/entity/Portfolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/entity/Portfolio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/mapper/PortfolioMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/service/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portfolio/entity/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/entity/UserPrincipal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/portfolio/service/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portfolio/service/JwtFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/portfolio/mapper/PortfolioMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/portfolio/mapper/PortfolioMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-portfolio.PortfolioAppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-portfolio.PortfolioAppApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/portfolio.PortfolioAppApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/portfolio.PortfolioAppApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/portfolio/PortfolioAppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/portfolio/PortfolioAppApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -63,6 +66,10 @@
     &quot;accountId&quot;: &quot;94d27549-2112-48ab-8faa-d0ad0c4a6b68&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -78,35 +85,71 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.Portfolio-App [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Portfolio-App [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.PortfolioAppApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Downloads/Portfolio-App&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.PortfolioAppApplicationTests.executor": "Run",
+    "Maven.Portfolio-App [clean].executor": "Run",
+    "Maven.Portfolio-App [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.PortfolioAppApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/Downloads/Portfolio-App",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Downloads\Portfolio-App" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Downloads\Portfolio-App\src\main\resources" />
+      <recent name="C:\Users\HP\Downloads\Portfolio-App\src\test\java\portfolio" />
+      <recent name="C:\Users\HP\Downloads\Portfolio-App\src\test" />
+      <recent name="C:\Users\HP\Downloads\Portfolio-App" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="portfolio.service" />
+      <recent name="portfolio.controller" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PortfolioAppApplicationTests">
+    <configuration name="PortfolioAppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio-App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="portfolio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="portfolio" />
+      <option name="MAIN_CLASS_NAME" value="portfolio.PortfolioAppApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PortfolioAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Portfolio-App" />
@@ -115,6 +158,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PortfolioAppApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -139,6 +187,10 @@
       <workItem from="1737198993178" duration="714000" />
       <workItem from="1737200137306" duration="2241000" />
       <workItem from="1737202730761" duration="836000" />
+      <workItem from="1737220834354" duration="1391000" />
+      <workItem from="1737265972434" duration="5330000" />
+      <workItem from="1737395853617" duration="33000" />
+      <workItem from="1737395912015" duration="11096000" />
     </task>
     <task id="LOCAL-00001" summary="some fixes">
       <option name="closed" value="true" />

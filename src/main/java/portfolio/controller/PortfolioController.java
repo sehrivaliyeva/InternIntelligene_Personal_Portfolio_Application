@@ -3,8 +3,6 @@ package portfolio.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.parameters.P;
 import org.springframework.web.bind.annotation.*;
 import portfolio.dto.PortfolioRequest;
 import portfolio.dto.PortfolioResponse;
@@ -45,7 +43,6 @@ public class PortfolioController {
                     .body(null);
         }
     }
-
 
     @DeleteMapping("/delete-portfolio")
     public ResponseEntity<?> deletePortfolio(@RequestParam Long id) {
