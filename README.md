@@ -1,7 +1,7 @@
-# Portfolio-App
+# Personal-Portfolio-Application
 
 ## Project Overview
-The **Portfolio-App** is a personal portfolio management system that allows users to register, log in, and manage their portfolios. Each user can create and maintain a single portfolio. Upon successful authentication via **JWT** (JSON Web Token), users are authorized to perform CRUD (Create, Read, Update, Delete) operations on their portfolio.
+The **Personal-Portfolio-Applicationp** is a personal portfolio management system that allows users to register, log in, and manage their portfolios. Each user can create and maintain a single portfolio. Upon successful authentication via **JWT** (JSON Web Token), users are authorized to perform CRUD (Create, Read, Update, Delete) operations on their portfolio.
 
 Built with **Spring Boot**, this app integrates powerful libraries for secure authentication, API documentation, and efficient data handling.
 
